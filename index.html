@@ -1,293 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snp Main</title>
-  <link rel="stylesheet" href="./style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salt’n Pepper Restaurants</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
-  <body>
-    <!-- navbar stared -->
-    <header>
-      <nav class="navbar">
-        <a href="#" class="logo">
-          <img src="logo.webp" alt="Salt n Pepper logo">
-        </a>
-
-        <div class="nav-items">
-          <a href="#">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#publication">Publication</a>
-          <button class="franchise-btn">Get a Franchise</button>
-                <button class="order-btn">Order Online <span class="arrow-icon"><i
-                            class="fa-solid fa-arrow-right-long"></i></span></button>
-            </nav>
-            <div class="menu">
-                <i class="fa-solid fa-bars menu-icon"></i>
-            </div>
+<body>
+ 
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="logo.webp" alt="Salt’n Pepper"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <ul><li><a href="index.html" class=active>Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="publications.html">Publications</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="franchise.html">Get a Franchise</a></li></ul>
+      <a href="https://restaurant.saltnpepper.com.pk/menu" class="outline-btn nav-order" target="_blank" rel="noopener">Order Online</a>
+    </nav>
+  </div>
+</header>
+ 
+<main>
+ 
+  <!-- ============ HERO SLIDER ============ -->
+  <section class="hero" id="hero">
+    <div class="slides">
+      <div class="slide active"><img src="slide1.webp" alt="slide 1"></div>
+      <div class="slide"><img src="slide2.webp" alt="slide 2"></div>
+      <div class="slide"><img src="slide3.webp" alt="slide 3"></div>
+      <div class="slide"><img src="slide4.webp" alt="slide 4"></div>
+    </div>
+    <button class="arrow prev" aria-label="Previous">&#10094;</button>
+    <button class="arrow next" aria-label="Next">&#10095;</button>
+    <div class="dots"></div>
+  </section>
+ 
+  <!-- ============ OUR BRANDS ============ -->
+  <section class="brands">
+    <div class="container">
+      <h2 class="brands-title">Welcome to Salt’n Pepper Restaurants! <span>Our Brands</span></h2>
+      <p class="brands-sub">Please click our brands below for further information, reservations or to order online!</p>
+      <div class="brand-grid">
+        <div class="brand-card">
+          <div class="brand-box"><img src="restaurant.webp" alt="Restaurant"></div>
+          <a href="https://restaurant.saltnpepper.com.pk/menu" class="outline-btn">Order Now</a>
         </div>
-    </header>
-
-    <main>
-      <section class="slider">
-        <div class="slider">
-          <img src="order now.webp" alt="Order now image">
-          <img src="khana.webp" alt="Festive dinner buffet image">
-          <img src="village.webp" alt="Festive lunch cum hi-tea image">
-          <img src="B.B.B" alt="Best breakfast buffit image">
+        <div class="brand-card">
+          <div class="brand-box"><img src="expresss.webp" alt="Express"></div>
+          <a href="https://express.saltnpepper.com.pk/menu" class="outline-btn">Order Now</a>
         </div>
-      </section>
-
-      <!-- OUR BRANDS -->
-      <section class="section brands" id="brands">
-        <div class="section-heading">
-          <h1>Welcome to <span>Salt'n Pepper</span></h1>
-          <h2>Restaurants! Our Brands</h2>
-          <p>Please click our brands below for futher information, reservation or to order online!</p>
+        <div class="brand-card">
+          <div class="brand-box"><img src="green village logo.webp" alt="Village"></div>
+          <a href="https://village.saltnpepper.com.pk/" class="outline-btn">Reserve a Table</a>
         </div>
-
-        <div class="brand-parent">
-          <div class="brand-card">
-            <div class="brand-box">
-              <img src="restaurant.webp" alt="restaurant logo image">
-            </div>
-            <a href="#" class="outline-btn">Order Now</a>
-          </div>
-
-          <div class="brand-card">
-            <div class="brand-box">
-              <img src="express.webp" alt="Express">
-            </div>
-            <a href="#" class="outline-btn">Order Now</a>
-          </div>
-
-          <div class="brand-card">
-            <div class="brand-box">
-              <img src="green village logo.webp" alt="village">
-            </div>
-            <a href="#" class="ouline-btn">Order Now</a>
-          </div>
-
-          <div class="brand-card">
-            <div class="brand-box">
-              <img src="signature.webp" alt="Brand">
-            </div>
-            <a href="#" class="ouline-btn">Order Now</a>
-          </div>
+        <div class="brand-card">
+          <div class="brand-box"><img src="signature.webp" alt="Signature"></div>
+          <a href="https://signature.saltnpepper.com.pk/" class="outline-btn">Order Now</a>
         </div>
-      </section>
-
-      <!--RESTAURANT FRANCHISES -->
-      <section class="franchises">
-        <div class="fe-wrap">
-
-          <div class="fr-title">
-            <div class="fr-brand">Salt'n Pepper</div>
-            <h2>Restaurant Franchises</h2>
-            <p>Each of our franchises are individually maneged. For furture details, kindlt contact them directly.</p>
-          </div>
-
-          <div class="fr-row">
-            <div class="fr-pic">
-             <img src="faisalabad.webp" alt="Faisalabad"></div>
-            <div class="fr-info">
-              <span class="fr-city">Faisalabad</span>
-              <h3><b>Salt'n Pepper</b>Restaurant</h3>
-              <p class="fr-line"><i>●</i>4-Kohinoor City, Faisalabad</p>
-              <p class="fr-line"><i>✆</i>Ph: 041-8711404</p>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>
-            </div>
-          </div>
-
-          <div class="fr-row fr-rev">
-            <div class="fr-pic">
-             <img src="bahawalpur.webp" alt="Bahawalpur"></div>
-            <div class="fr-info">
-              <span class="fr-city">Bahawalpur</span>
-              <h3><b>Salt'n Pepper</b>Restaurant</h3>
-              <p class="fr-line"><i>●</i>D.C Chowk, opposite Commissioner House, Bahawalpur</p>
-              <p class="fr-line"><i>✆</i>Ph: 062-2740271-2</p>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>  
-            </div>
-          </div>
-
-          <!-- EXPRESS FRANCHISES -->
-          <div class="fr-title">
-            <div class="fr-brand">Salt'n Pepper</div>
-            <h2>Express Franchises</h2>
-          </div>
-          <div class="fr-grid">
-
-            <div class="fr-card">
-              <img src="sargodha.webp" alt="Sargodha">
-              <span class="fr-city">Sargodha</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <P class="fr-line"><i>●</i>Opposite Sargodha Arts Council Babar Road</P>
-              <p class="fr-line"><i>✆</i>Ph: 048-3725500</p>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>
-            </div>
-
-            <div class="fr-card">
-              <img src="Jhelum.webp" alt="Jhelum">
-              <span class="fr-city">Jhelum</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>Opposite Dancing Fountain Gallery 2 Citi Housing Jhelum</p>
-              <p class="fr-line"><i>✆</i>Ph: 0307-7675555</p>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>
-            </div>
-
-            <div class="fr-card">
-              <img src="Faisal Town.webp" alt="Faisal town">
-              <span class="fr-city">Faisal Town</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>34-C Abul Hassan Isfahani Rd, Faisal Town, Lahore</p>
-              <p class="f-line"><i>✆</i>Ph: 042-111-100-678</p>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>
-            </div>
-
-            <div class="fr-card">
-              <img src="D H A.webp" alt="DHA">
-              <span class="fr-city">DHA</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>93-Y Phase III, DHA, Lahore</p>
-              <P class="fr-line"><i>✆</i>Ph: 042-111-100-678</P>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>
-            </div>
-
-            <div class="fr-card">
-              <img src="Bahria Town.webp" alt="Bahiria Town">
-              <span class="fr-city">Bahria Town</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>Arwa Heights Building 19 Nishtar Block, Sector E, Bahria Town Lahore</p>
-              <P class="fr-line"><i>✆</i>Ph: 042-111-100-678</P>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>
-            </div>
-
-            <div class="fr-card">
-              <img src="Gujar Khan.webp" alt="Gujar khan">
-              <span class="fr-city">Gujar Khan</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>New Metro City Gujar Khan</p>
-              <p class="fr-line"><i>✆</i>Ph: 0321-1114965</p>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>
-            </div>
-
-            <div class="fr-card">
-              <img src="LAhore.webp" alt="Lahore">
-              <span class="fr-city">Lahore</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>Shop no.5, Arcade Block, Fortress Stadium, Lahore</p>
-              <p class="fr-line"><i>✆</i>Ph: 042-366-23-100</p>
-              <a href="#" class="fr-btn">Get Directions</a>
-            </div>
-
-            <div class="fr-card">
-              <img src="Eithad Town Lahore.webp" alt="Eithad town lahore">
-              <span class="fr-city">Eithad Town</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>Eithad Town Phase 1, 19-B Maria B Tower, Main Raiwind Road Lahore</p>
-              <a href="#" class="fr-btn">Get Directions<span></span></a>
-            </div>
-            
-            <div class="fr-card">
-              <img src="gujrat.webp" alt="Gujrat">
-              <span class="fr-city">Gujrat</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>Service Mor, Gujrat</p>
-              <p class="fr-line"><i>✆</i>Ph: 0311-1124600</p>
-              <a href="#" class="fr-btn">Get Directions<span></span></a>
-            </div>
-
-            <div class="fr-card">
-              <img src="sahiwal.webp" alt="Sahiwal">
-              <span class="fr-city">Sahiwal</span>
-              <h3><b>Salt'n Pepper</b>Express</h3>
-              <p class="fr-line"><i>●</i>Opposite Main Gate Police line, Sahiwal</p>
-              <p class="fr-line"><i>✆</i>Ph: 040-4515485</p>
-              <a href="#" class="fr-btn">Get Directions<span></span></a>
-            </div>
-
-            <div class="fr-card">
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============ FRANCHISES ============ -->
+  <section class="franchises">
+    <div class="container">
+ 
+      <div class="fr-title">
+        <div class="fr-brand">Salt’n Pepper</div>
+        <h2>Restaurant Franchises</h2>
+        <p class="fr-sub">Each of our franchises are individually managed. For further details, kindly contact them directly.</p>
+      </div>
+ 
+      <div class="fr-row">
+        <div class="fr-pic"><img src="faisalabad.webp" alt="Faisalabad"></div>
+        <div class="fr-info">
+          <span class="fr-city">Faisalabad</span>
+          <h3><b>Salt’n Pepper</b> Restaurant</h3>
+          <p class="fr-line"><i>●</i>4-Kohinoor City, Faisalabad</p>
+          <p class="fr-line"><i>✆</i>Ph: 041-8711404</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Salt%27n%20Pepper%20Faisalabad%204-Kohinoor%20City" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+        </div>
+      </div>
+ 
+      <div class="fr-row fr-rev">
+        <div class="fr-pic"><img src="bahawalpur.webp" alt="Bahawalpur"></div>
+        <div class="fr-info">
+          <span class="fr-city">Bahawalpur</span>
+          <h3><b>Salt’n Pepper</b> Restaurant</h3>
+          <p class="fr-line"><i>●</i>D.C Chowk, opposite Commissioner House, Bahawalpur</p>
+          <p class="fr-line"><i>✆</i>Ph: 062-2740271-2</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=DC%20Chowk%20Bahawalpur" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+        </div>
+      </div>
+ 
+ 
+      <div class="fr-title">
+        <div class="fr-brand">Salt’n Pepper</div>
+        <h2>Express Franchises</h2>
+      </div>
+      <div class="fr-grid">
+ 
+      <div class="fr-card">
+        <img src="sargodha.webp" alt="Sargodha">
+        <span class="fr-city">Sargodha</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>Opposite Sargodha Arts Council Babar Road</p>
+        <p class="fr-line"><i>✆</i>Ph: 048-3725500</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Sargodha%20Arts%20Council%20Auditorium" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="Jhelum.webp" alt="Jhelum">
+        <span class="fr-city">Jhelum</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>Opposite Dancing Fountain Gallery 2 Citi Housing Jhelum</p>
+        <p class="fr-line"><i>✆</i>Ph: 0307-7675555</p>
+        <a href="https://maps.app.goo.gl/KeaG2nVejcfXtHXX7" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="Faisal Town.webp" alt="Faisal Town">
+        <span class="fr-city">Faisal Town</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>34-C Abul Hassan Isfahani Rd, Faisal Town, Lahore</p>
+        <p class="fr-line"><i>✆</i>Ph: 042-111-100-678</p>
+        <a href="https://maps.app.goo.gl/KeaG2nVejcfXtHXX7" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="D H A.webp" alt="DHA">
+        <span class="fr-city">DHA</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>93-Y Phase III, DHA, Lahore</p>
+        <p class="fr-line"><i>✆</i>Ph: 042-111-100-678</p>
+        <a href="https://maps.app.goo.gl/KeaG2nVejcfXtHXX7" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="Bahria Town.webp" alt="Bahria Town">
+        <span class="fr-city">Bahria Town</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>Arwa Heights Building 19 Nishtar Block, Sector E, Bahria Town Lahore</p>
+        <p class="fr-line"><i>✆</i>Ph: 042-111-100-678</p>
+        <a href="https://maps.app.goo.gl/KeaG2nVejcfXtHXX7" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="Gujar Khan.webp" alt="Gujar Khan">
+        <span class="fr-city">Gujar Khan</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>New Metro City Gujar Khan</p>
+        <p class="fr-line"><i>✆</i>Ph: 0321-1114965</p>
+        <a href="https://maps.app.goo.gl/EXyJXiDmQuXqAqJEA" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="LAhore.webp" alt="Lahore">
+        <span class="fr-city">Lahore</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>Shop no.5, Arcade Block, Fortress Stadium, Lahore</p>
+        <p class="fr-line"><i>✆</i>Ph: 042-366-23-100</p>
+        <a href="https://maps.app.goo.gl/qEt4sUXX1jNrqP21A" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="Eithad Town Lahore.webp" alt="Eithad Town Lahore">
+        <span class="fr-city">Eithad Town Lahore</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>Eithad Town Phase 1, 19-B, Maria B Tower, Main Raiwind Road Lahore</p>
+        <a href="https://maps.app.goo.gl/PBZSxXLk4keWU9eZ7" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="gujrat.webp" alt="Gujrat">
+        <span class="fr-city">Gujrat</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>Service Mor, Gujrat</p>
+        <p class="fr-line"><i>✆</i>Ph: 0311-1124600</p>
+        <a href="https://maps.app.goo.gl/GREgBF4FB552BMGp9" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
+        <img src="sahiwal.webp" alt="Sahiwal">
+        <span class="fr-city">Sahiwal</span>
+        <h3><b>Salt’n Pepper</b> Express</h3>
+        <p class="fr-line"><i>●</i>Opposite Main Gate Police Line, Sahiwal</p>
+        <p class="fr-line"><i>✆</i>Ph: 040-4515485</p>
+        <a href="https://maps.app.goo.gl/8H5HfFvGXvGs78uu8" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+ 
+      <div class="fr-card">
         <img src="burewala.webp" alt="Burewala">
         <span class="fr-city">Burewala</span>
         <h3><b>Salt’n Pepper</b> Express</h3>
         <p class="fr-line"><i>●</i>The Empire Mall, Canal Road, Burewala</p>
-        <p class="fr-line"><i>✆</i>Ph: 0318-4900832 | 067-3205644</p>
-        <a href="#" class="fr-btn">Get Directions <span></span></a>
+        <p class="fr-line"><i>✆</i>Ph: 0318-4900832</p>
+        <p class="fr-line"><i>✆</i>Ph: 067-3205644</p>
+        <a href="https://maps.app.goo.gl/JJqCacPWv6LDXrew8" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+      </div>
+      </div>
+ 
+      <div class="fr-title">
+        <div class="fr-brand">Salt’n Pepper</div>
+        <h2>Village Franchise</h2>
+      </div>
+ 
+      <div class="fr-row">
+        <div class="fr-pic"><img src="gujranwala.webp" alt="Gujranwala"></div>
+        <div class="fr-info">
+          <span class="fr-city">Gujranwala</span>
+          <h3><b>Salt’n Pepper</b> Village</h3>
+          <p class="fr-line"><i>●</i>Adjacent to Rida Marquees / DHA Main Gate, GT Road Gujranwala Cantt</p>
+          <p class="fr-line"><i>✆</i>Ph: 055-3884500</p>
+          <p class="fr-line"><i>✆</i>Ph: 055-3880400</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Salt%20n%20Pepper%20Village%20Gujranwala%20Cantt" class="fr-btn" target="_blank" rel="noopener">Get Directions <span></span></a>
+        </div>
+      </div>
+ 
+ 
+      <div class="fr-title">
+        <div class="fr-brand">Salt’n Pepper</div>
+        <h2>Express Franchises <em>(Opening Soon)</em></h2>
+      </div>
+      <div class="fr-soon">
+        <div><span>Opening Soon</span>Salt’n Pepper Express<small>Murree Expressway</small></div>
+        <div><span>Opening Soon</span>Salt’n Pepper Express<small>Kharian</small></div>
       </div>
     </div>
-
-       <!-- VILLAGE FRANCHISE -->
-          <div class="fr-title">
-            <div class="fr-brand">Salt'n Pepper</div>
-            <h2>Village Franchise</h2>
-          </div>
-
-          <div class="fr-row">
-            <div class="fr-pic"><img src="gujranwala.webp" alt="Gujranwala"></div>
-            <div class="fr-info">
-              <span class="fr-city">Gujranwala</span>
-              <h3><b>Salt'n Pepper</b>Village</h3>
-              <p class="fr-line"><i>●</i>Adjacent to Rida Murquees / DHA Main Gate, GT Road Gujranwala Cantt</p>
-              <p class="fr-line"><i>✆</i>Ph: 055-3884500 | 055-3880400</p>
-              <a href="#" class="fr-btn">Get Directions <span></span></a>
-            </div>
-          </div>
-
-          <!-- OPENING SOON -->
-          <div class="fr-title">
-            <div class="fe-brand">Salt'n Pepper</div>
-            <h2>Express Franchises<em>(Opening Soon)</em></h2>
-          </div>
-          <div class="fr-soon">
-            <div><span>Opening Soon</span>Salt'n Pepper Express<small>Murree Expressway</small></div>
-            <div><span>Opening Soon</span>Salt'n Pepper Express<small>Kharian</small></div>
-          </div>
-
-        </div>
-      </section>
-      
-      </main>
-
-    <!-- ==== FOOTER (</main ke baad, </body> se pehle)==== -->
-    <footer class="snp-footer">
-      <div class="fr-wrap footer-grid">
-        <div>
-          <img src="logo.webp" alt="Salt'n Pepper" class="footer-logo">
-          <p>The Salt'n Pepper Restaurants are an example of gracious dining, outstanding service, extraodinary classic and contemporary cuisine.</p>
-          <p class="footer-small"><a href="#">Terms &amp; conditions</a> .
-            <a href="#">Privacy policy</a></p>
-        </div>
-        <div>
-          <h4>Site Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Publications</a></li>
-            <li><a href="#">Get a Franchise</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact Us</h4>
-          <p><strong>Head office Address</strong><br>Foodconsults (Pvt) Ltd<br>23-Usman Block, New GardenTown, Lahore, Pakistan</p>
-          <p><strong>Head office number</strong><br>+92 42 358 509 31<br>+92 42 358 509 30</p>
-          <p><strong>Free delivery number</strong><br>+92 42 111 100 678<br>+92 03 111 444 610</p>
-        </div>
-        <div>
-          <h4>Follow Us</h4>
-          <div class="social">
-            <a href="https://www.facebook.com/TheSaltnPepperrestaurants/" aria-label="Facebook"></a>
-            <a href="https://www.instagram.com/saltnpepperrestaurants/" aria-label="Instagram"></a>
-            <a href="https://twitter.com/snprestaurant" aria-label="Twitter"></a>
-        </div>
-          <a href="https://apps.apple.com/tr/app/saltn-pepper/id1631088988" class="store">App Store</a>
-          <a href="https://play.google.com/store/apps/details? id=com.tossdown.snp&hl=en" class="store">Google Play</a>
-        </div>
+  </section>
+ 
+</main>
+ 
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="logo.webp" alt="Salt’n Pepper" class="footer-logo">
+      <p>The Salt’n Pepper Restaurants are an example of gracious dining, outstanding service, extraordinary classic and contemporary cuisine.</p>
+      <p class="footer-small"><a href="terms-conditions.html">Terms &amp; conditions</a> · <a href="privacy-policy.html">Privacy policy</a></p>
+    </div>
+    <div>
+      <h4>Site Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="franchise.html">Get a Franchise</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p><strong>Head office Address</strong><br>Foodconsults (Pvt) Ltd<br>23-Usman Block, New GardenTown, Lahore, Pakistan</p>
+      <p><strong>Head office number</strong><br>+92 42 358 509 31<br>+92 42 358 509 30</p>
+      <p><strong>Free delivery number</strong><br>+92 42 111 100 678<br>+92 03 111 444 610</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div class="social">
+        <a href="https://www.facebook.com/TheSaltnPepperRestaurants/" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a href="https://www.instagram.com/saltnpepperrestaurants/" aria-label="Instagram" target="_blank" rel="noopener">in</a>
+        <a href="https://twitter.com/snprestaurant" aria-label="Twitter" target="_blank" rel="noopener">t</a>
       </div>
-      <p class="fr-wrap copyright">© 2023 Salt'n Pepper Restaurant. Powered By tossdown.com</p>
-    </footer>
-  </body>
+      <a href="https://apps.apple.com/tr/app/saltn-pepper/id1631088988" class="store" target="_blank" rel="noopener"><small>Download on the</small>App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.tossdown.snp&hl=en" class="store" target="_blank" rel="noopener"><small>Get it on</small>Google Play</a>
+    </div>
+  </div>
+  <div class="container copyright">© 2023 Salt’n Pepper Restaurant. Powered By <a href="https://tossdown.com" target="_blank" rel="noopener">tossdown.com</a></div>
+</footer>
+ 
+<script>
+// Mobile menu
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+toggle.addEventListener('click', () => nav.classList.toggle('open'));
+ 
+// Hero slider
+const slides = document.querySelectorAll('.slide');
+const dotsBox = document.querySelector('.dots');
+let current = 0, timer;
+ 
+slides.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'Slide ' + (i + 1));
+  d.addEventListener('click', () => { show(i); restart(); });
+  dotsBox.appendChild(d);
+});
+const dots = dotsBox.querySelectorAll('button');
+ 
+function show(n) {
+  current = (n + slides.length) % slides.length;
+  slides.forEach((s, i) => s.classList.toggle('active', i === current));
+  dots.forEach((d, i) => d.classList.toggle('active', i === current));
+}
+function restart() { clearInterval(timer); timer = setInterval(() => show(current + 1), 4500); }
+ 
+document.querySelector('.prev').addEventListener('click', () => { show(current - 1); restart(); });
+document.querySelector('.next').addEventListener('click', () => { show(current + 1); restart(); });
+show(0); restart();
+</script>
+</body>
 </html>
+ 
