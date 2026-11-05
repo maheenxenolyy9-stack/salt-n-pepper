@@ -203,19 +203,19 @@ a {
 }
 
 .ob .ob-title {
-    font-family: "Apercu", "Figtree", sans-serif !important;
+    font-family: 'Apercu', sans-serif !important;
     font-weight: 300 !important;
     font-size: 52px;
     line-height: 62px;
 }
 
 .ob .ob-title .ob-name {
-    font-family: "futurak", "Jost", sans-serif !important;
+    font-family: 'futurak', sans-serif !important;
     font-weight: 400 !important;
 }
 
 .ob .ob-sub {
-    font-family: "Apercu", "Figtree", sans-serif;
+    font-family: 'Apercu', sans-serif;
     font-weight: 300 !important;
     font-size: 17px;
     color: #ccc;
