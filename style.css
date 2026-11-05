@@ -20,17 +20,19 @@ html {
 }
 
 @font-face {
-    font-family: 'futurak';
-    src: url('fonts/aperculight.otf/futurak-3.ttf.ttf') format('truetype');
+    font-family: "futurak";
+    src: url("fonts/futurak-3.ttf.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Apercu';
-    src: url('fonts/aperculight.otf/aperculight.otf.otf') format('opentype');
+    font-family: "Apercu";
+    src: url("fonts/aperculight.otf.otf") format("opentype");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
