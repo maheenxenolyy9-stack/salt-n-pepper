@@ -277,143 +277,124 @@ a {
     color: #000
 }
 
-/* ===== FRANCHISE ======*/
-.fr {
-    --serif: "Gloock", "Playfair Display", Georgia, serif;
-    --sans: "Apercu", "Figtree", sans-serif;
-    --accent: #ED1C24;
-    --muted: #cfcfcf;
-
-    background: #0f0f0f
-    color: #fff;
-    padding: 90px 40px 100px;
+/* ===== SECTION ===== */
+.fr-section {
+  --font-brand: "Futura", "Jost", "Century Gothic", sans-serif;     /* Salt'n Pepper */
+  --font-title: "Butler", "Playfair Display", Georgia, serif;       /* Restaurant Franchises */
+  --font-card:  "Apercu", "DM Sans", system-ui, sans-serif;         /* card ka Salt'n Pepper Restaurant */
+  --font-body:  "DM Sans", system-ui, sans-serif;
+ 
+  --fr-bg: #0d0e12;
+  --fr-text: #f3efe6;
+  --fr-muted: #c9c5bb;
+  --fr-accent: #d8452e;
+  --fr-cream: #f1e6c8;
+ 
+  background: var(--fr-bg);
+  color: var(--fr-text);
+  padding: 90px 24px;
+  font-family: var(--font-body);
 }
-
-.fr-head {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto 70px;
+.fr-wrap { max-width: 1100px; margin: 0 auto; }
+ 
+/* Heading */
+.fr-head { text-align: center; margin-bottom: 64px; }
+.fr-title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(30px, 4.6vw, 52px);
+  line-height: 1.15;
+  margin: 0 0 18px;
 }
-
-.fr-tittle {
-    font-family: var(--serif) !important;
-    font-weight: 400 !important;
-    font-size: 52px;
-    line-height: 62px;
+.fr-brand {
+  font-family: var(--font-brand);
+  font-weight: 700;
+  font-size: clamp(28px, 3.8vw, 42px);
+  letter-spacing: .5px;
 }
-
-.fr .ob-name {
-    font-family: "futurak", "Jost", sans-serif !important;
-    font-weight: 400 !important;
-}
-
-.fr-intro {
-    font-family: var(--sans);
-    font-weight: 300;
-    font-size: 17px;
-    color: var(--muted);
-    margin-top: 18px;
-}
-
-/* ---------- list ---------- */
-.fr-list {
-    max-width:1250px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: coloumn;
-    gap: 90px;
-}
-
+.fr-intro { font-size: 14px; color: var(--fr-muted); margin: 0; }
+ 
+/* List + items */
+.fr-list { display: flex; flex-direction: column; gap: 70px; }
 .fr-item {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    align-items: center;
-    gap: 60px;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  gap: 56px;
 }
-
-.fr-item--flip .fr-img { order: 2;}
-
 .fr-img {
-    width: 100%;
-    aspect-ratio: 16 / 11;
-    object-fit: cover;
-    border-radius: 6px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  background: #1a1c22;
 }
-
-/* ---------- info ---------- */
+.fr-item--flip { grid-template-columns: 1fr 1.15fr; }
+.fr-item--flip .fr-img  { order: 2; }
+.fr-item--flip .fr-info { order: 1; }
+ 
+/* Info */
 .fr-city {
-    font-family: var(--sans);
-    font-size: 14px;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 6px;
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--fr-accent);
 }
-
 .fr-name {
-    font-family: var(--sans) !important;
-    font-weight: 300 !important;
-    font-size: 36px;
-    line-height: 1.2;
-    margin-bottom: 22px;
+  margin: 0 0 22px;
+  font-family: var(--font-card);
+  font-weight: 500;
+  font-size: clamp(22px, 2.6vw, 30px);
 }
-
 .fr-line {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: var(--sans);
-    font-size: 17px;
-    color: #fff;
-    margin-bottom: 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--fr-muted);
+  line-height: 1.5;
 }
-
-.fr-line svg {
-    width: 16px;
-    height: 16px;
-    fill: #fff;
-    flex-shrink: 0;
-    min-width:16px;
-}
-
-/* ---------- button ---------- */
+.fr-line svg { width: 15px; height: 15px; flex: none; margin-top: 3px; fill: var(--fr-text); }
+.fr-line a { color: inherit; text-decoration: none; }
+.fr-line a:hover { color: var(--fr-text); }
+ 
+/* Get Directions button */
 .fr-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    margin-top: 34px;
-    padding: 8px 10px 8px 22px;
-    border-radius: 999px;
-    font-family: var(--serif);
-    font-size: 16px;
-    color: #fff;
-    transition: border-color 0.2s, background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 7px 8px 7px 22px;
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 999px;
+  color: var(--fr-text);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color .25s, background .25s;
 }
-
-.fr-btn:hover,
-.fr-btn:focus-visible {
-    border-color: var(--accent);
-    background: rgba(244, 98, 58, 0.08);
-    outline: none;
-}
-
 .fr-btn-icon {
-    display: grid;
-    place-items: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: #fff;
-    color: var(--accent);
-    font-size: 18px;
+  width: 30px; height: 30px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--fr-cream);
+  transition: transform .25s;
 }
+.fr-btn-icon svg { width: 13px; height: 13px; stroke: #111; fill: none; stroke-width: 2.2; }
+.fr-btn:hover { border-color: var(--fr-cream); background: rgba(255, 255, 255, .06); }
+.fr-btn:hover .fr-btn-icon { transform: translateX(3px); }
+ 
+/* Mobile */
+@media (max-width: 800px) {
+  .fr-section { padding: 60px 18px; }
+  .fr-head { margin-bottom: 44px; }
+  .fr-list { gap: 52px; }
+  .fr-item, .fr-item--flip { grid-template-columns: 1fr; gap: 24px; }
+  .fr-item--flip .fr-img, .fr-item--flip .fr-info { order: initial; }
+}
+ 
 
-/* ---------- mobile ---------- */
-.fr .fr-list { display:flex !important; flex-direction:coloumn !important; }
-.fr .fr-item { display:grid !important; grid-template-coloumns:1.3fr 1fr; width:100%; }
-.fr .fr-item--flip { grid-template-coloumns:1fr 1.3fr; }
-.fr .fr-btn { white-space:nowrap; }
-.fr .fr-img { width:100%; height:auto; }
-@media (max-width:860px) {
-    .fr .fr-items, .fr .fr-item--flip { grid-template-coloumns:1fr !important; }
-}
