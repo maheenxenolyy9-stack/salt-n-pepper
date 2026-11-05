@@ -408,11 +408,11 @@ a {
 }
 
 /* ---------- mobile ---------- */
-@media (max-width; 860px) {
-    .fr { padding: 60px 20px 70px; }
-    .fr-title { font-size: 36px; line-height: 44px; }
-    .fr-list { gap: 60px; }
-    .fr-item { grid-template-coloums: 1fr; gap: 28px; }
-    .fr-item--flip .fr-img { order: 0; }
-    .fr-name { font-size: 28px; }
+.fr .fr-list { display:flex !important; flex-direction:coloumn !important; }
+.fr .fr-item { display:grid !important; grid-template-coloumns:1.3fr 1fr; width:100%; }
+.fr .fr-item--flip { grid-template-coloumns:1fr 1.3fr; }
+.fr .fr-btn { white-space:nowrap; }
+.fr .fr-img { width:100%; height:auto; }
+@media (max-width:860px) {
+    .fr .fr-items, .fr .fr-item--flip { grid-template-coloumns:1fr !important; }
 }
