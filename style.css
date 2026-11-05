@@ -20,22 +20,24 @@ html {
 }
 
 @font-face {
-  font-family: inter;
-  src: url("../assets/fonts/inter/inter-normal.ttf");
+  font-family: 'futurak';
+  src: url('futurak-3.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+
 }
 @font-face {
-  font-family: apercu;
-  src: url("../assets/fonts/apercu/Apercu-medium.otf");
-}
-@font-face {
-  font-family: futurak;
-  src: url("../assets/fonts/futurak/FUTURAK.TTF");
+  font-family: 'apercu';
+  src: url('aperculight.otf') formate('opentype');
+    font-weight: 300;
+    font-display: swap;
 }
 
 body {
     background: #080808;
     color: white;
-    font-family: 'Futurak', sans-serif;
+    font-family: 'Apercu', sans-serif;
     line-height: 1.7;
 }
 h1, h2 {
