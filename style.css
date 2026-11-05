@@ -1,3 +1,6 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Figtree:wght@300;600&display=swap");
+
 /* RESET */
 * {
     margin: 0;
@@ -20,24 +23,23 @@ html {
 }
 
 @font-face {
-  font-family: 'futurak';
-  src: url('futurak-3.ttf) format('truetype');
+    font-family: 'futurak';
+    src: url('fonts/futurak\(3\).ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
-
 }
+
 @font-face {
-  font-family: 'apercu';
-  src: url('aperculight.otf') formate('opentype');
+    font-family: 'Apercu';
+    src: url('fonts/aperculight.otf') format('opentype');
     font-weight: 300;
-    font-display: swap;
+    font-style: normal;
 }
 
 body {
     background: #080808;
     color: white;
-    font-family: 'Apercu', sans-serif;
+    font-family: 'Futurak', sans-serif;
     line-height: 1.7;
 }
 h1, h2 {
@@ -195,7 +197,7 @@ a {
   width: 40px;
 }
 
-/* ===== OUR BRAND =====*/
+/* ===== OUR BRAND ===== */
 .ob {
     background: #000;
     color: #ffffff;
