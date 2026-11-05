@@ -38,7 +38,7 @@ html {
 body {
     background: #080808;
     color: white;
-    font-family: 'Futurak', sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     line-height: 1.7;
 }
 h1, h2 {
