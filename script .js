@@ -52,4 +52,3 @@ slider.addEventListener("mouseleave", start);
 
 start();
 
-document.fonts.forEach(f => console.log(f.family, f.status))
