@@ -23,17 +23,16 @@ html {
 }
 
 @font-face {
-    font-family: 'futurak';
-    src: url('fonts/futurak\(3\).ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: inter;
+  src: url("../assets/fonts/inter/inter-normal.ttf");
 }
-
 @font-face {
-    font-family: 'Apercu';
-    src: url('fonts/aperculight.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: apercu;
+  src: url("../assets/fonts/apercu/Apercu-medium.otf");
+}
+@font-face {
+  font-family: futurak;
+  src: url("../assets/fonts/futurak/FUTURAK.TTF");
 }
 
 body {
