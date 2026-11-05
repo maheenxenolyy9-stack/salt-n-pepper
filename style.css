@@ -373,6 +373,7 @@ a {
     height: 16px;
     fill: #fff;
     flex-shrink: 0;
+    min-width:16px;
 }
 
 /* ---------- button ---------- */
