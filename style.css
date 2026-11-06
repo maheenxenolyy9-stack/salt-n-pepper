@@ -524,8 +524,8 @@ a {
   --muted: #cfcfcf;
 }
 
-.brand-font { font-family: "Futura", "Century Gothic", sans-serif; font-weight: 700; }
-.sub-font   { font-family: "Apercu", "Segoe UI", sans-serif; }
+.brand-font { font-family: "Futurak", "Jost", sans-serif !important; }
+.sub-font: { font-family: "Apercu", "Segoe UI", sans-serif;}
 
 .sec-title {
   text-align: center;
@@ -599,7 +599,7 @@ a {
   transition: color 0.3s;
 }
 .btn-green:hover { background: #000; }
-.btn-green:hover .arrow { color: #000; }
+.btn-green:hover .btn-arrow{ color: #000; }
 
 
 /* ---------- EXPRESS FRANCHISES ---------- */
