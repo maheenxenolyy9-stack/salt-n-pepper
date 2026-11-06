@@ -421,49 +421,80 @@ a {
   .fr-name { font-size: 28px; }
 }
 
-.fr.ex .ex-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 50px 30px;
-  max-width: 1250px;
-  margin: 0 auto;
+/* ===== EXPRESS FRANCHISES ===== */
+/* franchises.css pehle se paste hona chahiye (ye uske .fr styles use karta hai).
+   Ye code style.css ke end mein paste karo. */
+
+.fr.ex {
+  padding: 90px 40px 100px;
 }
 
-.fr.ex .ex-card {
+.fr.ex .fr-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.ex-grid {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px 40px;
+}
+
+.ex-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-width: 0;
 }
 
-.fr.ex .ex-img {
+.ex-img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 26px;
 }
 
-/* sirf phone par 1 column */
-@media (max-width: 600px) {
-  .fr.ex .ex-grid { grid-template-columns: 1fr !important; }
+.ex-card .fr-city {
+  font-size: 13px;
+  margin-bottom: 8px;
 }
 
+.ex-name {
+  font-family: var(--sans) !important;
+  font-weight: 300 !important;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
 
-.fr.ex .ex-grid.ex-grid--duo {
-  display: flex !important;
+.ex-card .fr-line {
   justify-content: center;
-  gap: 30px;
-  width: 100%;
-  max-width: 1250px !important;
-  margin: 70px auto 0 !important;
-}
-.fr.ex .ex-grid.ex-grid--duo .ex-card {
-  flex: 0 0 calc((100% - 60px) / 3);
-  max-width: calc((100% - 60px) / 3);
-}
-@media (max-width: 600px) {
-  .fr.ex .ex-grid.ex-grid--duo { flex-direction: column; align-items: center; }
-  .fr.ex .ex-grid.ex-grid--duo .ex-card { flex: 0 0 auto; max-width: 100%; width: 100%; }
+  align-items: flex-start;
+  font-size: 15px;
+  margin-bottom: 14px;
+  text-align: center;
 }
 
+.ex-card .fr-line svg {
+  min-width: 16px;
+  margin-top: 4px;
+}
 
+.ex-card .fr-btn {
+  margin-top: auto;
+  white-space: nowrap;
+}
+
+/* tablet */
+@media (max-width: 1000px) {
+  .ex-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* mobile */
+@media (max-width: 640px) {
+  .fr.ex { padding: 60px 20px 70px; }
+  .ex-grid { grid-template-columns: 1fr; gap: 56px; }
+}
