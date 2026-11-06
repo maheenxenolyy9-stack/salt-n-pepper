@@ -686,6 +686,7 @@ a {
 .store img { width: 120px; display: block; }
 
 .footer-bottom {
+  background: #000000;
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
