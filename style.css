@@ -463,7 +463,7 @@ a {
 }
 
 .ex-name {
-  font-family: var(--sans) !important;
+  font-family: "futurak", "Jost" !important;
   font-weight: 300 !important;
   font-size: 26px;
   line-height: 1.2;
