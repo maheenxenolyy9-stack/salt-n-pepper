@@ -514,3 +514,183 @@ a {
   .fr.ex .ex-grid .ex-card { flex-basis: 100%; max-width: 100%; }
 }
 
+/* ---------- shared bits ---------- */
+:root {
+  --bg: #15151a;
+  --cream: #f1e9c9;
+  --green: #4caf3d;
+  --red: #e8452c;
+  --text: #ffffff;
+  --muted: #cfcfcf;
+}
+
+.brand-font { font-family: "Futura", "Century Gothic", sans-serif; font-weight: 700; }
+.sub-font   { font-family: "Apercu", "Segoe UI", sans-serif; }
+
+.sec-title {
+  text-align: center;
+  color: var(--text);
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.sec-title span { display: block; }
+.sec-title small { font-size: 18px; }
+
+
+/* ---------- VILLAGE FRANCHISE ---------- */
+.village {
+  background: var(--bg);
+  padding: 70px 0;
+}
+.village-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.village-img { flex: 0 0 50%; }
+.village-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.village-info { flex: 1; color: var(--text); }
+.village-info .city {
+  color: var(--red);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.village-info h3 {
+  font-size: 26px;
+  margin: 10px 0 18px;
+}
+.village-info .line {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.village-info .line i { margin-right: 8px; }
+
+.btn-green {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 10px 14px 10px 24px;
+  background: var(--green);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 40px;
+  transition: background 0.3s;
+}
+.btn-green .arrow {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: var(--green);
+  border-radius: 50%;
+  transition: color 0.3s;
+}
+.btn-green:hover { background: #000; }
+.btn-green:hover .arrow { color: #000; }
+
+
+/* ---------- EXPRESS FRANCHISES ---------- */
+.express {
+  background: var(--bg);
+  padding: 40px 0 80px;
+}
+.express-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.express-card {
+  flex: 1;
+  height: 180px;
+  background: var(--cream);
+  color: #222;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.3s;
+}
+.express-card:hover { transform: translateY(-5px); }
+.express-card img { width: 40px; }
+.express-card h4 { font-size: 18px; }
+.express-card p  { font-size: 16px; font-weight: 600; }
+
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: linear-gradient(180deg, #17171c 0%, #1f2029 100%);
+  color: var(--muted);
+  padding-top: 60px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 50px;
+}
+.f-logo { width: 100px; margin-bottom: 15px; }
+.f-about p { font-size: 13px; line-height: 1.7; }
+.f-legal { margin-top: 15px; display: flex; gap: 15px; }
+.f-legal a { font-size: 12px; }
+
+.footer a { color: var(--muted); text-decoration: none; }
+.footer a:hover { color: #fff; }
+
+.f-col h5 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+.f-col h6 {
+  color: #fff;
+  font-size: 13px;
+  margin: 14px 0 6px;
+}
+.f-col p { font-size: 12px; line-height: 1.7; }
+.f-col ul { list-style: none; padding: 0; }
+.f-col li { margin-bottom: 14px; font-size: 13px; }
+
+.socials { display: flex; gap: 12px; margin-bottom: 20px; }
+.socials a {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: var(--red);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+}
+.store { display: block; margin-bottom: 12px; }
+.store img { width: 120px; display: block; }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 40px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
