@@ -281,13 +281,17 @@ a {
 /* Apne style.css ke end mein paste karo.
    @font-face (futurak, Apercu) pehle se upar hona chahiye. */
 
+/* ===== FRANCHISES ===== */
+/* Apne style.css ke end mein paste karo.
+   @font-face (futurak, Apercu) pehle se upar hona chahiye. */
+
 .fr {
-  --serif: "futurak", "Jost", sans-serif;
+  --serif: "Gloock", "Playfair Display", Georgia, serif; /* exact serif font mil jaye to yahan badal do */
   --sans: "Apercu", "Figtree", sans-serif;
   --accent: #f4623a;
   --muted: #cfcfcf;
 
-  background: #0f0f0f;
+  background: #000;
   color: #fff;
   padding: 90px 40px 100px;
 }
@@ -387,7 +391,7 @@ a {
   padding: 8px 10px 8px 22px;
   border: 1px solid #555;
   border-radius: 999px;
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-size: 16px;
   color: #fff;
   transition: border-color 0.2s, background 0.2s;
