@@ -278,15 +278,11 @@ a {
 }
 
 /* ===== FRANCHISES ===== */
-/* Apne style.css ke end mein paste karo.
-   @font-face (futurak, Apercu) pehle se upar hona chahiye. */
-
-/* ===== FRANCHISES ===== */
-/* Apne style.css ke end mein paste karo.
-   @font-face (futurak, Apercu) pehle se upar hona chahiye. */
+/* style.css ke end mein paste karo.
+   @font-face (Futurak, Apercu) pehle se upar hona chahiye. */
 
 .fr {
-  --serif: "Gloock", "Playfair Display", Georgia, serif; /* exact serif font mil jaye to yahan badal do */
+  --serif: "Gloock", "Playfair Display", Georgia, serif;
   --sans: "Apercu", "Figtree", sans-serif;
   --accent: #f4623a;
   --muted: #cfcfcf;
@@ -294,6 +290,11 @@ a {
   background: #000;
   color: #fff;
   padding: 90px 40px 100px;
+}
+
+.fr a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .fr-head {
@@ -307,10 +308,11 @@ a {
   font-weight: 400 !important;
   font-size: 52px;
   line-height: 62px;
+  margin: 0;
 }
 
 .fr .ob-name {
-  font-family: "futurak", "Jost", sans-serif !important;
+  font-family: "Futurak", "Jost", sans-serif !important;
   font-weight: 400 !important;
 }
 
@@ -319,7 +321,7 @@ a {
   font-weight: 300;
   font-size: 17px;
   color: var(--muted);
-  margin-top: 18px;
+  margin: 18px 0 0;
 }
 
 /* ---------- list ---------- */
@@ -338,6 +340,10 @@ a {
   gap: 60px;
 }
 
+/* flip: image right side par, aur wide column bhi image ka hi rahe */
+.fr-item--flip {
+  grid-template-columns: 1fr 1.3fr;
+}
 .fr-item--flip .fr-img { order: 2; }
 
 .fr-img {
@@ -345,6 +351,7 @@ a {
   aspect-ratio: 16 / 11;
   object-fit: cover;
   border-radius: 6px;
+  display: block;
 }
 
 /* ---------- info ---------- */
@@ -354,7 +361,7 @@ a {
   letter-spacing: 0.35em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 6px;
+  margin: 0 0 6px;
 }
 
 .fr-name {
@@ -362,7 +369,7 @@ a {
   font-weight: 300 !important;
   font-size: 36px;
   line-height: 1.2;
-  margin-bottom: 22px;
+  margin: 0 0 22px;
 }
 
 .fr-line {
@@ -372,13 +379,13 @@ a {
   font-family: var(--sans);
   font-size: 17px;
   color: #fff;
-  margin-bottom: 6px;
+  margin: 0 0 6px;
 }
 
 .fr-line svg {
   width: 16px;
   height: 16px;
-  fill: #fff;
+  fill: var(--accent);
   flex-shrink: 0;
 }
 
@@ -391,7 +398,7 @@ a {
   padding: 8px 10px 8px 22px;
   border: 1px solid #555;
   border-radius: 999px;
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 16px;
   color: #fff;
   transition: border-color 0.2s, background 0.2s;
@@ -412,7 +419,13 @@ a {
   border-radius: 50%;
   background: #fff;
   color: var(--accent);
-  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.fr-btn-icon svg {
+  width: 15px;
+  height: 15px;
+  display: block;
 }
 
 /* ---------- mobile ---------- */
@@ -420,10 +433,12 @@ a {
   .fr { padding: 60px 20px 70px; }
   .fr-title { font-size: 36px; line-height: 44px; }
   .fr-list { gap: 60px; }
-  .fr-item { grid-template-columns: 1fr; gap: 28px; }
+  .fr-item,
+  .fr-item--flip { grid-template-columns: 1fr; gap: 28px; }
   .fr-item--flip .fr-img { order: 0; }
   .fr-name { font-size: 28px; }
 }
+
 
 /* ===== EXPRESS FRANCHISES ===== */
 /* franchises.css pehle se paste hona chahiye (ye uske .fr styles use karta hai).
