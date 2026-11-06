@@ -462,6 +462,16 @@ a {
   margin-bottom: 8px;
 }
 
+.fr.ex .ex-grid.ex-grid--duo {
+  grid-template-columns: repeat(2, 1fr) !important;
+  max-width: 825px;
+  margin-top: 70px;
+}
+@media (max-width: 600px) {
+  .fr.ex .ex-grid.ex-grid--duo { grid-template-columns: 1fr !important; }
+}
+
+
 .ex-name {
   font-family: var(--sans) !important;
   font-weight: 300 !important;
