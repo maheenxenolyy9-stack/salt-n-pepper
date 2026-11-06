@@ -687,11 +687,15 @@ a {
 
 .footer-bottom {
   background: #000000;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 18px 40px;
-  font-size: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+width: 100%
+}
+
+.footer-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 40px
+    font-size: 12px;
 }
