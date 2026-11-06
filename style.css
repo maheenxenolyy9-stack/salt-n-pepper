@@ -282,7 +282,7 @@ a {
    @font-face (futurak, Apercu) pehle se upar hona chahiye. */
 
 .fr {
-  --serif: "Gloock", "Playfair Display", Georgia, serif; /* exact serif font mil jaye to yahan badal do */
+  --serif: "futurak", "Jost", sans-serif;
   --sans: "Apercu", "Figtree", sans-serif;
   --accent: #f4623a;
   --muted: #cfcfcf;
@@ -387,7 +387,7 @@ a {
   padding: 8px 10px 8px 22px;
   border: 1px solid #555;
   border-radius: 999px;
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 16px;
   color: #fff;
   transition: border-color 0.2s, background 0.2s;
